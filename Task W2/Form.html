@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pendaftaran EDE Laboratory</title>
+    </head>
+    <style>
+        body {
+            margin-top: 50px;
+            margin-left: 30%;
+            margin-right: 30%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        input {
+            border: none;
+            border-bottom: 2px solid rgb(119, 0, 255);
+            width: 200px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        .name .f {
+            float :left;
+        }
+        .name .l {
+            padding-left: 350px;
+        }
+        .username {
+            float:left;
+        }
+        .pw {
+            padding-left: 350px;
+        }
+        .cencel {
+            border-bottom: 0px;
+            color:rgb(119, 0, 255);
+            border: 1px solid rgb(119, 0, 255);
+            background-color: white;
+            border-radius: 5px;
+        }
+        .submit {
+            margin-left: 30px;
+            border-bottom: 0px;
+            background-color: rgb(119, 0, 255);
+            color:white;
+            border-radius: 5px;
+        }
+    </style>
+    <body>
+        <h1>Formulir Pendaftaran EDE Laboratory</h1>
+        <form>
+            <div class='name'>
+                <div class='f'> 
+                    <label for="fname">Nama Awal:</label><br>
+                    <input type="text" placeholder="Masukan Nama Awal"><br>
+                </div>
+                <div class='l'>
+                    <label for="lname">Nama Akhir:</label><br>
+                    <input type="text" placeholder="Masukan Nama Akhir">    
+                </div>
+            </div>
+            <div class='username'>
+                <label>Username:</label><br>
+                <input type="text" placeholder="Masukan Username"><br>
+            </div>
+            <div class='pw'>
+                <label>Password:</label><br>
+                <input type="password" placeholder="Masukan Password"><br>
+            </div>
+            <div class='email'>
+                <label>Email:</label><br>
+                <input type="email" placeholder="Masukan Email"><br>
+            </div>
+            <div class='jk'>
+                <label>Jenis Kelamin:</label><br><br>
+                <input name='jk' style='width:auto;' type="radio" value="Laki-laki">
+                <label>Laki-laki</label>
+                <input name='jk' style='width:auto; margin-left: 50px;' type='radio' value="Perempuan">
+                <label>Perempuan</label>
+            </div>
+            <div class='kelas'>
+                <label>Kelas:</label><br><br>
+                <input list="kelas" placeholder="Pilih kelas">
+                <datalist id="kelas">
+                    <option value="SI-43-01">
+                    <option value="SI-43-02">
+                    <option value="SI-43-03">
+                </datalist>
+            </div>
+            <div class='Peminatan'>
+                <label>Peminatan:</label><br><br>
+                <input name='Peminatan' style='width:auto;' type="checkbox" value="Data Science">
+                <label>Data Science</label>
+                <input name='Peminatan' style='width:auto; margin-left: 50px;' type='checkbox' value="Data Engineering">
+                <label>Data Engineering</label>
+            </div>
+            <input class='cencel' type="reset" value="Cencel">
+            <input class='submit' type="submit" onclick="alert('Hello World!')" value="Submit">
+          </form>
+    </body>
+</html>
