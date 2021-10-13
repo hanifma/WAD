@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pendaftaran EDE Laboratory</title>
+    </head>
+    <style>
+        body {
+            margin-top: 0px;
+            margin-left: 30%;
+            margin-right: 30%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(34, 0, 97);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 100px;
+            padding-top: 50px;
+            margin-right: 100px;
+        }
+        input {
+            border: none;
+            border-bottom: 2px solid rgb(119, 0, 255);
+            width: 200px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        .container {
+            background-color: rgb(255, 255, 255);
+            padding-left: 80px;
+            margin-top: 0;
+        }
+        .name .f {
+            float :left;
+        }
+        .name .l {
+            padding-left: 350px;
+        }
+        .username {
+            float:left;
+        }
+        .pw {
+            padding-left: 350px;
+        }
+        .cencel {
+            border-bottom: 0px;
+            color:rgb(119, 0, 255);
+            border: 1px solid rgb(119, 0, 255);
+            background-color: white;
+            border-radius: 5px;
+        }
+        .submit {
+            margin-left: 30px;
+            border-bottom: 0px;
+            background-color: rgb(119, 0, 255);
+            color:white;
+            border-radius: 5px;
+        }
+        .lds-roller {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            }
+        .lds-roller div {
+            animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            transform-origin: 40px 40px;
+            }
+        .lds-roller div:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #fff;
+            margin: -4px 0 0 -4px;
+            }
+        .lds-roller div:nth-child(1) {
+            animation-delay: -0.036s;
+            }
+        .lds-roller div:nth-child(1):after {
+            top: 63px;
+            left: 63px;
+            }
+        .lds-roller div:nth-child(2) {
+            animation-delay: -0.072s;
+            }
+        .lds-roller div:nth-child(2):after {
+            top: 68px;
+            left: 56px;
+            }
+        .lds-roller div:nth-child(3) {
+            animation-delay: -0.108s;
+            }
+        .lds-roller div:nth-child(3):after {
+            top: 71px;
+            left: 48px;
+            }
+        .lds-roller div:nth-child(4) {
+            animation-delay: -0.144s;
+            }
+        .lds-roller div:nth-child(4):after {
+            top: 72px;
+            left: 40px;
+            }
+        .lds-roller div:nth-child(5) {
+            animation-delay: -0.18s;
+            }
+        .lds-roller div:nth-child(5):after {
+            top: 71px;
+            left: 32px;
+            }
+        .lds-roller div:nth-child(6) {
+            animation-delay: -0.216s;
+            }
+        .lds-roller div:nth-child(6):after {
+            top: 68px;
+            left: 24px;
+            }
+        .lds-roller div:nth-child(7) {
+            animation-delay: -0.252s;
+            }
+        .lds-roller div:nth-child(7):after {
+            top: 63px;
+            left: 17px;
+            }
+        .lds-roller div:nth-child(8) {
+            animation-delay: -0.288s;
+            }
+        .lds-roller div:nth-child(8):after {
+            top: 56px;
+            left: 12px;
+            }
+        @keyframes lds-roller {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+    <body>
+        <div class="container">
+        <h1>Formulir Pendaftaran EDE Laboratory</h1>
+        <form>
+            <div class='name'>
+                <div class='f'> 
+                    <label for="fname">Nama Awal:</label><br>
+                    <input type="text" placeholder="Masukan Nama Awal"><br>
+                </div>
+                <div class='l'>
+                    <label for="lname">Nama Akhir:</label><br>
+                    <input type="text" placeholder="Masukan Nama Akhir">    
+                </div>
+            </div>
+            <div class='username'>
+                <label>Username:</label><br>
+                <input type="text" placeholder="Masukan Username"><br>
+            </div>
+            <div class='pw'>
+                <label>Password:</label><br>
+                <input type="password" placeholder="Masukan Password"><br>
+            </div>
+            <div class='email'>
+                <label>Email:</label><br>
+                <input type="email" placeholder="Masukan Email"><br>
+            </div>
+            <div class='jk'>
+                <label>Jenis Kelamin:</label><br><br>
+                <input name='jk' style='width:auto;' type="radio" value="Laki-laki">
+                <label>Laki-laki</label>
+                <input name='jk' style='width:auto; margin-left: 50px;' type='radio' value="Perempuan">
+                <label>Perempuan</label>
+            </div>
+            <div class='kelas'>
+                <label>Kelas:</label><br><br>
+                <input list="kelas" placeholder="Pilih kelas">
+                <datalist id="kelas">
+                    <option value="SI-43-01">
+                    <option value="SI-43-02">
+                    <option value="SI-43-03">
+                </datalist>
+            </div>
+            <div class='Peminatan'>
+                <label>Peminatan:</label><br><br>
+                <input name='Peminatan' style='width:auto;' type="checkbox" value="Data Science">
+                <label>Data Science</label>
+                <input name='Peminatan' style='width:auto; margin-left: 50px;' type='checkbox' value="Data Engineering">
+                <label>Data Engineering</label>
+            </div>
+            <input class='cencel' type="reset" value="Cencel">
+            <input class='submit' type="submit" onclick="alert('Hello World!')" value="Submit">
+          </form>
+        </div>
+    </body>
+</html>
